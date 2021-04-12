@@ -1,0 +1,27 @@
+@use "variables.scss";
+
+@mixin mq($width, $type: min) {
+  @if map_has_key(variables.$breakpoints, $width) {
+    $width: map_get(variables.$breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin hoveredElement($color) {
+  text-shadow: 0 0 20px $color;
+}
+
+@keyframes translateAndFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(200px);
+  }
+}

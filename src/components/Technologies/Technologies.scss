@@ -1,0 +1,28 @@
+@use '../../styles/colors';
+@use '../../styles/mixins';
+
+.tec {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 4px solid white;
+  border-radius: 50px;
+  &__title-container {
+    text-align: center;
+    &__title {
+      font-size: 48px;
+      color: white;
+      @include mixins.mq("tablet", "max") {
+        font-size: 36px;
+      }
+    }
+    &__description {
+      color: colors.$primary-light;
+      opacity: 0.8;
+      font-size: 24px;
+    }
+  }
+}

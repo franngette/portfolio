@@ -1,0 +1,29 @@
+@use '../../styles/mixins';
+@use '../../styles/colors';
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  z-index: 20;
+  background-color: colors.$primary-deepdark;
+  border-bottom: 1px solid colors.$primary-gray;
+  &_list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 2rem;
+    &_item {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      &:hover {
+        @include mixins.hoveredElement(white);
+      }
+    }
+  }
+}

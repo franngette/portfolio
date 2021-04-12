@@ -1,0 +1,62 @@
+@use '../../styles/colors';
+@use '../../styles/mixins';
+.footer {
+  background-color: colors.$primary-deepdark;
+  color: white;
+  height: 50vh;
+  position: relative;
+  padding: 1rem;
+  &__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    &__container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &--linkedin {
+        cursor: pointer;
+        &:hover {
+          color: #0a66c2;
+        }
+      }
+      &--github {
+        cursor: pointer;
+        margin-left: 1rem;
+        &:hover {
+          color: #ffa500;
+        }
+      }
+      &--mail {
+        cursor: pointer;
+        margin-left: 1rem;
+        &:hover {
+          color: #00abe9;
+        }
+      }
+      &__title {
+        font-size: 48px;
+        margin-bottom: 1rem;
+        width: 50vw;
+        text-align: center;
+      }
+    }
+  }
+  &__contact {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: black;
+    opacity: 0.2;
+    transform: rotate(-90deg);
+    font-size: 10vh;
+    font-weight: bolder;
+    @include mixins.mq('tablet', "max"){
+      right: -10vh;
+    }
+  }
+}

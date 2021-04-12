@@ -1,0 +1,9 @@
+@forward "mixins.scss";
+@forward "colors.scss";
+@import "variables.scss";
+@import "resets.scss";
+@import "animations.scss";
+
+:root {
+  font-family: "Raleway", sans-serif;
+}

@@ -1,0 +1,48 @@
+@use '../../styles/colors';
+@use '../../styles/mixins';
+
+.projects-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  &__title-container {
+    text-align: center;
+    &--title {
+      color: white;
+      font-size: 48px;
+      margin-bottom: 1rem;
+    }
+    &--description {
+      color: colors.$primary-light;
+      opacity: 0.8;
+      font-size: 24px;
+    }
+  }
+  &__content {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+    @include mixins.mq('tablet-wide', "max"){
+      flex-direction: column;
+    }
+    &__child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex: 1;
+      transition: all 1s ease;
+      &:hover {
+        flex: 3;
+        transform: scale(1.1);
+        z-index: 10;
+      }
+    }
+  }
+}

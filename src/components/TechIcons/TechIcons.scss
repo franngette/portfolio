@@ -1,0 +1,26 @@
+.techicons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  &_container {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    &:hover {
+      box-shadow: 0 0 20px white;
+    }
+    &_item {
+      width: 2.5rem;
+      max-height: 2.5rem;
+    }
+  }
+}
