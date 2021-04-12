@@ -1,0 +1,2 @@
+@keyframes translateAndFade{0%{opacity:0}to{opacity:1;transform:translate(200px)}}.about{display:flex;justify-content:center;align-items:center;flex-direction:column;color:#fff;font-size:36px;text-align:center;height:50vh}@media only screen and (max-width:767px){.about{font-size:24px}}.about__title{font-size:60px;margin:2rem}@media only screen and (max-width:767px){.about__title{font-size:42px}}
+/*# sourceMappingURL=8.a09eba0a.chunk.css.map */
