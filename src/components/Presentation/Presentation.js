@@ -18,7 +18,7 @@ const Presentation = () => {
         </motion.h1>
       </motion.div>
       <div className="pres__img">
-        <img src='/images/me.jpg' alt='Francis Gette' className="pres__img--framed" />
+        <img src='./images/me.jpg' alt='Francis Gette' className="pres__img--framed" />
       </div>
 
       <PresAnimation />

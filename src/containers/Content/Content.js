@@ -22,8 +22,6 @@ const Content = () => {
 
         entries.forEach((element) => {
           if (element.isIntersecting) {
-            console.log(element.intersectionRatio)
-
             intersectionHandler(element);
           }
         });

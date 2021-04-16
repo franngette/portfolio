@@ -27,7 +27,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p><span style={{ color: 'gray' }}>© 2021 All rights reserved.</span> Designed & Coded by Francis Gette</p>
+        <p><span style={{ color: '#3c4753' }}>© 2021 All rights reserved.</span> Designed & Coded by Francis Gette</p>
       </div>
       <h1 className="footer__contact">Contact</h1>
     </footer>

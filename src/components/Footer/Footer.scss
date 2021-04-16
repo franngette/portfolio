@@ -50,9 +50,8 @@
     position: absolute;
     right: 0;
     top: 50%;
-    color: black;
-    opacity: 0.2;
-    transform: rotate(-90deg);
+    color: colors.$primary-tecnologies;
+        transform: rotate(-90deg);
     font-size: 10vh;
     font-weight: bolder;
     @include mixins.mq('tablet', "max"){

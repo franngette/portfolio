@@ -9,6 +9,8 @@
   margin: 0.25rem;
   &:hover {
     .project__container__content__image {
+      display: flex;
+      justify-content: center;
       width: 100%;
       opacity: 1;
     }

@@ -21,23 +21,33 @@
     padding: 3rem;
     &__title {
       opacity: 0;
-      font-size: 48px;
+      font-size: 5vw;
       margin-bottom: 2rem;
+      @include mixins.mq("desktop-wide", "max") {
+        font-size: 48px;
+      }
     }
     &__description {
       z-index: 10;
       opacity: 0;
-      font-size: 32px;
+      font-size: 2vw;
+      @include mixins.mq("desktop-wide", "max") {
+        font-size: 32px;
+      }
     }
   }
   &__img {
     z-index: 10;
     background-color: white;
-    height: 550px;
-    width: 550px;
+    height: 800px;
+    width: 800px;
     border-radius: 25%;
     overflow: hidden;
     filter: grayscale(90%);
+    @include mixins.mq("desktop-wide", "max") {
+      height: 550px;
+      width: 550px;
+    }
     @include mixins.mq("tablet", "max") {
       height: 300px;
       width: 300px;

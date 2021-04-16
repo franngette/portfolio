@@ -6,14 +6,14 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import './Project.scss'
 
 const images = {
-  Kino: ["/images/kino-1.png", "/images/kino-2.png"],
-  Monitor: ["/images/monitor_gif.gif",
-    "/images/monitor_sites.png",
-    "/images/monitor_siteDetail.png",
-    "/images/monitor_admin.png",],
-  TaskManager: ["/images/taskmanager-1.png", "/images/taskmanager-2.png", "/images/taskmanager-3.png"],
-  CoinTrace: ["/images/cointrace-1.png"],
-  CoursesApps: ["/images/guess.png", "/images/meals.png", "/images/places.png", "/images/shop.png"]
+  Kino: ["./images/kino-1.png", "./images/kino-2.png"],
+  Monitor: ["./images/monitor_gif.gif",
+    "./images/monitor_sites.png",
+    "./images/monitor_siteDetail.png",
+    "./images/monitor_admin.png",],
+  TaskManager: ["./images/taskmanager-1.png", "./images/taskmanager-2.png", "./images/taskmanager-3.png"],
+  CoinTrace: ["./images/cointrace-1.png"],
+  CoursesApps: ["./images/guess.png", "./images/meals.png", "./images/places.png", "./images/shop.png"]
 };
 
 const Project = ({ title, tech, color, link }) => {
